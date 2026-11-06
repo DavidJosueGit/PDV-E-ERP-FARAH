@@ -1,0 +1,6 @@
+{
+  "summary": "Plano de implementação detalhado para a separação arquitetural das interfaces do Nexus PDV & ERP em duas experiências dedicadas: Painel Administrativo (/admin) e Frente de Caixa (/pdv), com roteamento nativo, proteção gerencial para saída do caixa e preservação integral dos serviços e dados compartilhados.",
+  "updatedAt": "2026-11-05T21:33:08.463807425Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

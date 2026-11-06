@@ -1,0 +1,8 @@
+{
+  "name": "Farah Esfiharia e Pizzaria - PDV & ERP",
+  "description": "Sistema comercial e ponto de venda da Farah Esfiharia e Pizzaria integrado com retaguarda, controle de estoque, frente de caixa, TEF e emissão fiscal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

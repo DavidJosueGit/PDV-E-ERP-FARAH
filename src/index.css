@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #FFCC33;
+  --color-brand-red: #CF1020;
+  --color-brand-charcoal: #242424;
+  --color-farah-bg: #F6F5F1;
+  --color-farah-surface: #FFFFFF;
+  --color-farah-border: #E7E2D8;
+  --color-farah-text: #252525;
+  --color-farah-muted: #6B6862;
+  --color-farah-success: #26734D;
+  --color-farah-warning: #D97706;
+  --color-farah-danger: #B42318;
+}
+
+/* Custom scrollbars for clean restaurant dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E7E2D8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CFC9BE;
+}
+
+/* Regras de impressão para cupom térmico 80mm/58mm sem páginas em branco */
+@media print {
+  @page {
+    size: 80mm auto;
+    margin: 0;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt,
+  #thermal-receipt *,
+  #closing-receipt,
+  #closing-receipt * {
+    visibility: visible;
+  }
+  #thermal-receipt,
+  #closing-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm !important;
+    max-width: 80mm !important;
+    margin: 0 !important;
+    padding: 3mm 4mm !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}
